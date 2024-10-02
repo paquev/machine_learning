@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../src/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -17,53 +17,47 @@
         <div class="text">
             <h1>Revisar datos de paciente.</h1>
             <p>Para predecir el posible estado de diabetes de un paciente, porfavor ingresa los resultados obtenidos.</p>
-        </div>
-       
+            <h2>Resultado : {{output}} </h2>
+          </div>
         <div class="formbg-outer">
             <div class="formbg">
               <div class="formbg-inner padding-horizontal--48">
                 <span class="padding-bottom--15">Ingresa aqui los datos</span>
-                <form id="stripe-login">
+                <form id="stripe-login" method="POST" action="/">
                   <div class="field padding-bottom--24">
                     <label for="email">Total embarazos</label>
                     <input type="text" name="embarazos">
                   </div>
                   <div class="field padding-bottom--24">
-                    <label for="email">Total embarazos</label>
-                    <input type="text" name="embarazos">
+                    <label for="email">Glucosa</label>
+                    <input type="text" name="glucosa">
                   </div>
                   <div class="field padding-bottom--24">
-                    <label for="email">Total embarazos</label>
-                    <input type="text" name="embarazos">
+                    <label for="email">Presion en sangre</label>
+                    <input type="text" name="presionSangre">
                   </div>
                   <div class="field padding-bottom--24">
-                    <label for="email">Total embarazos</label>
-                    <input type="text" name="embarazos">
+                    <label for="email">Grosor piel</label>
+                    <input type="text" name="grosorPiel">
                   </div>
                   <div class="field padding-bottom--24">
-                    <label for="email">Total embarazos</label>
-                    <input type="text" name="embarazos">
+                    <label for="email">Insulina</label>
+                    <input type="text" name="insulina">
                   </div>
                   <div class="field padding-bottom--24">
-                    <label for="email">Total embarazos</label>
-                    <input type="text" name="embarazos">
+                    <label for="email">IMC</label>
+                    <input type="text" name="imc">
                   </div>
                   <div class="field padding-bottom--24">
-                    <label for="email">Total embarazos</label>
-                    <input type="text" name="embarazos">
+                    <label for="email">Historial Familiar</label>
+                    <input type="text" name="historialFamiliar">
                   </div>
                   <div class="field padding-bottom--24">
-                    <label for="email">Total embarazos</label>
-                    <input type="text" name="embarazos">
+                    <label for="email">Edad</label>
+                    <input type="text" name="edad">
                   </div>
                   <div class="field padding-bottom--24">
-                    <label for="email">Total embarazos</label>
-                    <input type="text" name="embarazos">
-                  </div>
-
-
-                  <div class="field padding-bottom--24">
-                    <input type="submit" name="submit" value="Continue">
+                    <input type="submit" name="submit" value="Obtener evaluacion">
                   </div>
 
                 </form>
